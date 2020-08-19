@@ -13,6 +13,14 @@ public class Main {
 
     }
 
+    private static void builder(){
+        Kladivo kladivo = Kladivo.noveKladivo()
+                .farba("Biele")
+                .vyrobca("OBI")
+                .dlzka(40.50f)
+                .build();
+    }
+
     private static void factory() { // facotry pattern, pouzivam instaciu ktra bola niekde vztvorena a spracovana, nevytvaram si ju ja
         Kladivo kladivo = Factory.createKladivo();
     }
