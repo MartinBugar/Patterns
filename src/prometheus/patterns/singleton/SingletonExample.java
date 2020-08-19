@@ -1,4 +1,4 @@
-package prometheus.patterns;
+package prometheus.patterns.singleton;
 
 public class SingletonExample {
 

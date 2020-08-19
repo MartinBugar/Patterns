@@ -1,13 +1,22 @@
 package prometheus;
 
 
-import prometheus.patterns.SingletonExample;
+import prometheus.patterns.factory.Factory;
+import prometheus.patterns.factory.Kladivo;
+import prometheus.patterns.singleton.SingletonExample;
 
 public class Main {
 
     public static void main(String[] args) {
 	singleton();
+    factory();
+
     }
+
+    private static void factory() { // facotry pattern, pouzivam instaciu ktra bola niekde vztvorena a spracovana, nevytvaram si ju ja
+        Kladivo kladivo = Factory.createKladivo();
+    }
+
 
     private static void singleton() {
         SingletonExample singletonExample = SingletonExample.getInstance(); // zavolam si uz vytvorenu instanciu
